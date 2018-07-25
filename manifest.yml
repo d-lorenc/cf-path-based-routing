@@ -1,0 +1,17 @@
+---
+applications:
+- name: main
+  memory: 64MB
+  path: ./main
+  routes:
+  - route: cf-path-based-routing.cfapps.io
+- name: foo
+  memory: 64MB
+  path: ./foo
+  routes:
+  - route: cf-path-based-routing.cfapps.io/foo
+- name: bar
+  memory: 64MB
+  path: ./bar
+  routes:
+  - route: cf-path-based-routing.cfapps.io/bar
